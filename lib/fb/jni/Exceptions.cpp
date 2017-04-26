@@ -161,8 +161,8 @@ namespace {
 void rethrow_if_nested() {
   try {
     throw;
-  } catch (const std::nested_exception& e) {
-    e.rethrow_nested();
+  // } catch (const std::nested_exception& e) {
+  //   e.rethrow_nested();
   } catch (...) {
   }
 }
